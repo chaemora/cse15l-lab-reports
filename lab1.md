@@ -22,6 +22,9 @@
 - `pwd` prints the current working directory path
 - `mkdir` makes directories
 - `cp` copies files from one location to another
-- The examples I used and the expected output can be found in the screenshot below
-- Here, I used the `ls` command followed by a directory in order to see the contents inside
+- The examples I used and the expected output can be found in the screenshots below
+- In the first screenshot, I used the `ls` command followed by a directory in order to see the contents inside
 ![Image](cmds.PNG)
+- In the next screenshot, I used the `pwd` command to show me what my current working directory path is
+![Image](pwd.PNG)
+- In this last screenshot, I used the `cd` command to change my directory 
