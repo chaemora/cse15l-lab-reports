@@ -17,12 +17,12 @@
 
 **Trying Some Commands**
 - Finally, try out some commands:
-- `ls` lists contents inside a directory
-- `cd` changes directories
-- `pwd` prints the current working directory path
-- `mkdir` makes directories
-- `cp` copies files from one location to another
-- The examples I used and the expected output can be found in the screenshots below
+  - `ls` lists contents inside a directory
+  - `cd` changes directories
+  - `pwd` prints the current working directory path
+  - `mkdir` makes directories
+  - `cp` copies files from one location to another
+- The commands I used and their expected output can be found in the screenshots below
 - In the first screenshot, I used the `ls` command followed by a directory in order to see the contents inside
 ![Image](cmds.PNG)
 - In the next screenshot, I used the `pwd` command to show me what my current working directory path is
