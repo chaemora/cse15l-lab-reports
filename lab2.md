@@ -92,5 +92,6 @@ static void reverseInPlace(int[] arr) {
 
 The bug for reverseInPlace was that it iterates the entire array when it should only do half. Halfway through, the method has already completed switching the elements left and right. By continuing further, it undoes it. To fix this, I put “/2” after “arr.length” in the second line so that the loop only goes through half.
 
+**Part 3**
 
-
+Something I learned from lab in week two was how to create a web server. I didn't know that you could access the website from different computers or keep it local. 
