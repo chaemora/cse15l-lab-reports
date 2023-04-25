@@ -26,6 +26,7 @@
 - In the first screenshot, I used the `ls` command followed by a directory in order to see the contents inside
 ![Image](cmds.PNG)
 - In the next screenshot, I used the `pwd` command to show me what my current working directory path is
+
 ![Image](pwd.PNG)
 - In this last screenshot, I used the `cd` command to change my directory and used the `pwd` command again to show that it did change
 ![Image](cd.PNG)
