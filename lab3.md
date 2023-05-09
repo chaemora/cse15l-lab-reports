@@ -52,3 +52,106 @@ Another example is the command `grep -c -v "the" ./technical/911report/preface.t
 
 When searching for an extremely common word like the word "the", it helps to get a count of the lines instead of just seeing the contents of the lines.
 
+## Inverted Matching
+The command-line option `-v` will search for lines that do not contain the string given.
+This is useful for when the user wants to exclude all lines that contain a word they don't want.
+
+### First Example
+One example would be typing in the command `grep -v "e" ./technical/biomed/1472-6793-2-5.txt`. This outputs:
+```
+
+
+
+
+        Background
+
+
+
+          Purification
+          ε
+          280 and ε
+          280 = 7.85 × 10 4cm -1M -1and ε
+          551 = 4.8 × 10 4cm -1M -1) [ 5 ] .
+
+
+          280 /ε
+          Fig. 2.
+
+
+          3).
+          a pK
+          pR at pH 6 or 8 (data not shown).
+
+
+
+        Discussion
+
+          Purification of pR
+          H. salinarum.
+          purifications is ~30%. Most of this loss, ~65%, occurs
+
+
+          post-translationally.
+
+
+          520 nm in
+          that λ
+
+
+
+
+
+
+          μs.
+
+
+          structural configuration of 2 carboxylic acid groups and
+          of E194 and E204 in bR.
+          bR mutant E194Q [ 14 ] . In this mutant, Asp-85 was
+          functional configuration.
+
+
+
+        Conclusions
+        post-translational modifications, including ~4000 daltons
+        bR.
+
+
+
+          E. coli strain UT5600 containing an
+
+
+          Column purification
+          of 1.5-2.0%. Fractions having an A
+          280 /A
+          280 /A
+
+
+
+
+
+
+          Flash photolysis
+
+
+
+
+
+
+```
+This prints all lines that don't contain the letter "e", including the empty lines as well since they techinically don't contain the letter either.
+
+### Second Example
+A second example is typing in `grep -v "i" ./technical/911report/preface.txt`. The terminal will print:
+```
+
+
+
+            PREFACE
+                27, 2002).
+                learned.
+                most complete account we can of the events of September 11, what happened and why.
+
+```
+For the sake of length, I chose single letters because each text file contained too many lines for an entire word to appear enough to exclude a large amount of lines. However, words can be used as well.
+
