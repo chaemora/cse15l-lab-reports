@@ -155,3 +155,31 @@ A second example is typing in `grep -v "i" ./technical/911report/preface.txt`. T
 ```
 For the sake of length, I chose single letters because each text file contained too many lines for an entire word to appear enough to exclude a large amount of lines. However, words can be used as well.
 
+## Numbering
+The command-line option `-n` will print the lines like usual, but also add which specific line numbers they come from.
+This is useful for when the user wis searching for the specific line numbers that contain that string. This way, they can immediately go to that line in the file instead of manually searching themselves. This removes the frustration of constantly overlooking the word they are searching for.
+
+### First Example
+For the first example, typing in `grep -n "Congress" ./technical/911report/preface.txt` will output:
+```
+
+6:                the President of the United States, the United States Congress, and the American
+14:            To answer these questions, the Congress and the President created the National
+56:                Congress needs dramatic change as well to strengthen oversight and focus
+68:                have been superb. We thank the Congress and the President. Executive branch agencies
+75:                of several previous Commissions, and we thank the Congressional Joint Inquiry, whose
+
+```
+
+This command is helpful if I wanted to know which lines contained "Congress" so that I could go directly to the line that mentions it.
+
+### Second Example
+As a second example, the command `grep -n "which" ./technical/911report/chapter-10.txt` will output:
+```
+27:                situation with superiors in Washington. The President completed his statement, which
+292:            President Bush also tasked the State Department, which on the following day delivered
+377:                regarding a two-day visit to Afghanistan during which the Pakistani intelligence
+464:                15 afternoon session, which dealt solely with Afghanistan.
+```
+
+If I was curious about how many times the word "which" appears, I could go to the individual lines.
