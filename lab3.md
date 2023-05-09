@@ -1,7 +1,7 @@
 # Lab Report 3
 For this lab report I chose to research command-line options for `grep`.
 
-I used ChatGPT as my source of information. For the prompt, I input "command line options for grep". Then, ChatGPT gnereated a list of commands and what they did.
+I used ChatGPT as my source of information. For the prompt, I input "command line options for grep". Then, ChatGPT generated a list of commands and what they did.
 
 ## Ignoring case
 Using the command-line option `-i` will ignore case when searching for what you input.
