@@ -31,3 +31,24 @@ A second example is the command `grep -i "WHICH" ./technical/911report/chapter-1
 ```
 
 Despite being in all caps, the terminal will still return every line that contains the word "which" no matter the case.
+
+## Line Count
+Using the command-line option `-c` will cause the terminal to return the amount of lines that contain the string given rather than print all the lines in their entirety.
+This is useful for when there are too many lines that contain a string that it clogs up the terminal. I used it to find strings that when used for the `grep` command would output something easily readable. I don't want the terminal to show me hundreds of lines and make me count each line one at a time.
+
+### First Example
+An example is the command `grep -c "which" ./technical/911report/chapter-10.txt`, which outputs:
+```
+4
+```
+
+As you can see, the output is a number rather than lines of strings.
+
+### Second Example
+Another example is the command `grep -c -v "the" ./technical/911report/preface.txt`, which will output:
+```
+40
+```
+
+When searching for an extremely common word like the word "the", it helps to get a count of the lines instead of just seeing the contents of the lines.
+
