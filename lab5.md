@@ -32,5 +32,12 @@ This is what was inside TestListExamples.java.
 
 ListExamples.java varies depending on the submission, but this is what https://github.com/ucsd-cse15l-f22/list-methods-corrected (the one used in the first screenshot) looks like.
 
-![Image](listExamples1)
-![Image](listExamples1)
+![Image](listExamples1.PNG)
+![Image](listExamples1.PNG)
+
+GradeServer.java and Server.java can be seen, but they aren't necessary to recreate this setup and its bugs.
+
+The bug was triggered after trying to run grade.sh with a link.
+
+To fix the bug, the student should add `cd grading-area` after copying the files so that the terminal goes into the correct directory to run the rest of the commands.
+![Image](fix.PNG)
