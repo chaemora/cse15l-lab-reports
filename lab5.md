@@ -27,3 +27,10 @@ By using the pwd command, the student realizes that they aren't in the right dir
 
 ### 4. Setup
 
+This is what was inside TestListExamples.java.
+![Image](pwdBug.PNG)
+
+ListExamples.java varies depending on the submission, but this is what https://github.com/ucsd-cse15l-f22/list-methods-corrected (the one used in the first screenshot) looks like.
+
+![Image](listExamples1)
+![Image](listExamples1)
