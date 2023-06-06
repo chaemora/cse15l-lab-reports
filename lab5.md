@@ -40,4 +40,13 @@ GradeServer.java and Server.java can be seen, but they aren't necessary to recre
 The bug was triggered after trying to run grade.sh with a link.
 
 To fix the bug, the student should add `cd grading-area` after copying the files so that the terminal goes into the correct directory to run the rest of the commands.
+
 ![Image](fix.PNG)
+
+Now the error doesn't pop up. Another bug appears, but it's different from the one the student brought up in their original post.
+
+![Image](oops.PNG)
+
+# Part 2 - Reflection
+
+Something I learned from lab is that `set -e` stops the script immediately after a command fails. To disable this, you use `set +e`. I saw `set +e` first being used by a classmate when we were looking over each other's code for debugging practice. It made logical sense to me that switching `-` to `+` would disable it. I liked how it worked. 
