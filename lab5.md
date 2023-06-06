@@ -21,3 +21,9 @@ Thank you for the detail in your question. If the file cannot be found, is it be
 
 ### 3. Fixing the bug
 
+![Image](pwdBug.PNG)
+
+By using the pwd command, the student realizes that they aren't in the right directory to run the tests (grading-area). The bug is that grade.sh doesn't change directories to grading-area.
+
+### 4. Setup
+
